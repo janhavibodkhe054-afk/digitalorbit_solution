@@ -13,7 +13,7 @@ function WhyUs() {
       <section className="bg-white py-4 px-9 ">
         <div className="container mx-auto text-center">
           <h1 className= " text-xl md:text-4xl font-bold text-black mb-3">
-          Why to Choose ArrayLogic Academy IT Courses Institute in Pune, India
+          Why to Choose DIGITALORBIT SOLUTIONS LLP IT Courses Institute in Pune, India
           </h1>
           <h3 className="text-lg text-black mb-12">
           Your Path to Expert IT Skills, Real-World Experience, and Career Excellence

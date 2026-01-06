@@ -1,45 +1,90 @@
 import React from "react";
-import companies from "./CompaniesData";
+
+const services = [
+  {
+    title: "IT Training & Certification Programs",
+    description:
+      "Comprehensive training programs aligned with current industry standards, offering hands-on experience, real-time project exposure, and globally recognized certifications.",
+  },
+  {
+    title: "AI & Machine Learning Training",
+    description:
+      "Practical, use-case-driven training covering data handling, model development, automation, and AI-driven decision-making.",
+  },
+  {
+    title: "Web & Mobile App Development",
+    description:
+      "Design and development of modern, scalable, and user-friendly websites and mobile applications using the latest technologies.",
+  },
+  {
+    title: "Software Development & IT Solutions",
+    description:
+      "Customized software solutions tailored to business needs, ensuring efficiency, scalability, and high performance across industries.",
+  },
+  {
+    title: "Internship & Industrial Training",
+    description:
+      "Industry-oriented internships and industrial training programs providing real-world exposure, live projects, and professional environments.",
+  },
+  {
+    title: "Career Guidance & Skill Development",
+    description:
+      "Personalized career counseling, resume building, interview preparation, and soft-skill development to boost employability and confidence.",
+  },
+];
 
 const Companies = () => {
-
   return (
-    <div className="max-w-screen-xl mx-auto py-6 md:py-12 px-4 md:px-0 mb-0">
-      <h3 className="text-center text-xl md:text-3xl font-bold mb-4 md:mb-8 text-black">
-        Best IT Training & Courses Institute in Pune with Placement Assistance
+    <div className="max-w-screen-xl mx-auto py-14 px-4 overflow-hidden">
+      
+      {/* Heading */}
+      <h3 className="text-center text-2xl md:text-4xl font-extrabold text-gray-900 mb-4">
+        Our Services
       </h3>
-      <h3 className="text-center text-xl md:text-3xl font-bold mb-5 md:mb-8 text-red-500">
-        Our Placement Partners
-      </h3>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-10">
-        {companies.map((company) => (
-          <div
-            key={company.name}
-            className="flex flex-col items-center p-2 rounded-lg bg-gradient-to-t from-white to-transparent shadow-xl transform transition-all duration-300 hover:scale-105 hover:shadow-2xl"
-            style={{
-              border: `2px solid ${company.color}`,
-              boxShadow: `0px 10px 15px rgba(0,0,0,0.1)`,
-            }}
-          >
-            <img
-              src={company.logo}
-              alt={`Logo of ${company.name}`}
-              onError={(e) => e.target.src = "/default-logo.webp"} // Fallback logo in case of error
-              className="h-24 w-24 object-contain mb-0 transition-all duration-200 transform hover:scale-110"
-              loading="lazy"
-            />
-            <p
-              className="text-lg font-semibold text-center"
-              style={{
-                color: company.color,
-                textShadow: "0px 2px 4px rgba(0,0,0,0.2)",
-              }}
+
+      <p className="text-center text-gray-600 max-w-3xl mx-auto mb-10 text-sm md:text-base">
+        DIGITALORBIT SOLUTIONS LLP delivers industry-relevant training and
+        technology solutions designed to empower careers and businesses.
+      </p>
+
+      {/* Carousel Wrapper */}
+      <div className="relative">
+        <div className="flex gap-6 animate-scroll hover:[animation-play-state:paused]">
+          {[...services, ...services].map((service, index) => (
+            <div
+              key={index}
+              className="min-w-[280px] md:min-w-[340px] bg-white rounded-2xl p-6 shadow-lg border border-gray-100 
+                         hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
             >
-              {company.name}
-            </p>
-          </div>
-        ))}
+              <h4 className="text-lg md:text-xl font-bold text-blue-700 mb-3">
+                {service.title}
+              </h4>
+
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                {service.description}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
+
+      {/* Animation Styles */}
+      <style>
+        {`
+          @keyframes scroll {
+            0% {
+              transform: translateX(0);
+            }
+            100% {
+              transform: translateX(-50%);
+            }
+          }
+
+          .animate-scroll {
+            animation: scroll 5s linear infinite;
+          }
+        `}
+      </style>
     </div>
   );
 };

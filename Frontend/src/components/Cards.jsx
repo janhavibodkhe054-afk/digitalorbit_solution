@@ -7,37 +7,37 @@ function Cards({ item }) {
   };
 
   return (
-    <div>
-      <div className="mt-1 p-3 flex justify-center">
-        <div className="card bg-gradient-to-r from-purple-700 via-indigo-800 to-black w-92 shadow-xl hover:scale-105 duration-200 text-white border border-black flex flex-col items-center p-0 rounded-lg">
-          {/* Image Section */}
-          <figure className="overflow-hidden rounded-lg">
-            <img
-              src={item.image}
-              alt={item.name} // Descriptive alt text for the image
-              className="rounded-lg max-w-full h-auto hover:scale-110 transition-transform duration-500"
-            />
-          </figure>
+    <div className="mt-8 flex justify-center px-4">
+  <div className="relative w-80 bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-lg hover:scale-105 transition-transform duration-300 flex flex-col items-center overflow-hidden">
+    
+    {/* Image Section */}
+    <figure className="w-full overflow-hidden rounded-t-2xl">
+      <img
+        src={item.image}
+        alt={item.name}
+        className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500"
+      />
+    </figure>
 
-          {/* Card Body */}
-          <h2 className="card-title text-center text-white mt-3 pb-4 pt-2">
-            {item.name}
-            <p className="text-center">{item.title}</p>
-          </h2>
-
-          {/* Download Syllabus Button */}
-          <div className="card-actions justify-center mt-2">
-            <a
-              href={generateSyllabusURL(item.id)} // Dynamically generate syllabus URL
-              download // Enable download
-              className="btn bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800 transition-all duration-300 mb-4"
-            >
-              Download Syllabus
-            </a>
-          </div>
-        </div>
-      </div>
+    {/* Card Body */}
+    <div className="flex flex-col items-center text-center p-5">
+      <h2 className="text-xl font-semibold text-white">{item.name}</h2>
+      <p className="mt-2 text-gray-300 text-sm">{item.title}</p>
     </div>
+
+    {/* Download Syllabus Button */}
+    <div className="w-full flex justify-center pb-5">
+      <a
+        href={generateSyllabusURL(item.id)}
+        download
+        className="bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-600 text-white font-medium px-6 py-2 rounded-full hover:scale-105 transition-transform duration-300 shadow-md"
+      >
+        Download Syllabus
+      </a>
+    </div>
+  </div>
+</div>
+
   );
 }
 

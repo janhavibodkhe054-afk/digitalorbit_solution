@@ -4,7 +4,6 @@ import Companies from "../components/Companies";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import { Helmet } from "react-helmet";
-import InternshipOpportunities from "../components/Internship";
 import Metrics from "../components/Matrices";
 import Navbar from "../components/Navbar";
 import ServiceSlider from "../components/Slider";
@@ -22,7 +21,7 @@ function Home() {
         />
         <meta
           name="keywords"
-          content="IT training in Pune, best IT institute Pune, Java Full Stack courses, MERN Stack training, MEAN Stack institute, Python Full Stack training, Data Science courses, Cloud Computing certifications, Machine Learning training, AI courses in Pune, Software Development, tech career training, IT internships Pune, professional IT courses"
+          content="IT training in Pune, best IT institute Pune, Java Full Stack courses, MERN Stack training, MEAN Stack institute, Python Full Stack training, Data Science courses, Cloud Computing certifications, Machine Learning training, AI courses in Pune, Software Development, tech career training, professional IT courses"
         />
         <meta property="og:title" content="Top IT Training Institute in Pune | ArrayLogic Academy" />
         <meta
@@ -50,7 +49,6 @@ function Home() {
       <ServiceSlider />
       <WhyHome />
       <Companies />
-      <InternshipOpportunities />
       <Metrics />
       <SuccessStories />
       <ContactForm />

@@ -38,7 +38,7 @@ const App = () => {
         />
       </Helmet>
 
-      <div className="dark:bg-slate-900 dark:text-white">
+      <div className="bg-white text-gray-900 min-h-screen">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/course" element={<Courses />} />
