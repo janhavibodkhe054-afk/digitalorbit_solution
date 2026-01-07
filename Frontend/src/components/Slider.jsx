@@ -21,7 +21,7 @@ const ServiceSlider = () => {
       title: "Java Full Stack",
       img: "./JavaFullStack.webp",
       desc:
-        "Enterprise-level application development using Java, Spring Boot, Hibernate, REST APIs, HTML, CSS, JavaScript, SQL, Git, and Maven.",
+        "Enterprise-level application development using Java, Spring Boot, Hibernate, REST APIs, HTML, CSS, JavaScript, SQL, Git.",
     },
     {
       title: "Python Full Stack",

@@ -4,63 +4,79 @@ import emailjs from "@emailjs/browser";
 
 const AboutHome = () => {
   const [showForm, setShowForm] = useState(false);
-  const form = useRef();
+  const formRef = useRef(null);
 
-  const handleFormToggle = useCallback(() => {
+  const toggleForm = useCallback(() => {
     setShowForm((prev) => !prev);
   }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    if (!emailjs || !form.current) return;
+    if (!formRef.current) return;
 
     emailjs
-      .sendForm("service_5r25imp", "template_kd8ybev", form.current, {
-        publicKey: "jU-1FIjK-BxDlu-KT",
-      })
+      .sendForm(
+        "service_5r25imp",
+        "template_kd8ybev",
+        formRef.current,
+        { publicKey: "jU-1FIjK-BxDlu-KT" }
+      )
       .then(() => setShowForm(false))
-      .catch((err) => console.error(err));
+      .catch(console.error);
   };
 
   return (
-    <div className="max-w-screen-2xl mx-auto md:px-16 px-4 py-14">
+    <section className="max-w-screen-2xl mx-auto px-4 sm:px-8 md:px-16 pt-16">
       
       {/* Heading */}
-      <h1 className="text-center font-extrabold text-3xl md:text-5xl 
-                     bg-gradient-to-r from-blue-600 to-orange-500 
-                     text-transparent bg-clip-text mb-5">
+      <h1 className="
+        text-center font-extrabold
+        text-3xl sm:text-4xl md:text-5xl
+        bg-gradient-to-r from-blue-600 to-orange-500
+        text-transparent bg-clip-text
+        mb-6
+      ">
         DIGITALORBIT SOLUTIONS LLP
       </h1>
 
       {/* Description */}
-      <p className="text-center text-sm md:text-lg text-gray-600 
-                    max-w-4xl mx-auto leading-relaxed">
-        Empowering Careers Through Technology & Innovation. DIGITALORBIT
-        SOLUTIONS LLP is a leading IT Training and Development company based in
-        Sonai, Ahmednagar. We deliver industry-relevant education, practical
-        training, and technology-driven solutions to help students and
-        professionals succeed in the digital era.
+      <p className="
+        text-center text-sm sm:text-base md:text-lg
+        text-gray-600
+        max-w-4xl mx-auto
+        leading-relaxed
+      ">
+        Empowering careers through technology and innovation. DIGITALORBIT
+        SOLUTIONS LLP is a professional IT Training and Development Institute
+        based in Sonai, Ahmednagar. We deliver industry-oriented courses,
+        practical learning, and real-world projects to help students and
+        professionals succeed in today’s digital industry.
       </p>
 
       {/* CTA Buttons */}
-      <div className="mt-10 flex flex-col sm:flex-row justify-center gap-5">
+      <div className="mt-12 flex flex-col sm:flex-row justify-center gap-4">
         <button
-          onClick={handleFormToggle}
-          className="bg-blue-600 text-white px-10 py-3 rounded-xl 
-                     font-semibold shadow-lg transition-all duration-300
-                     hover:bg-orange-500 hover:shadow-orange-300/40 
-                     hover:-translate-y-1"
+          onClick={toggleForm}
+          className="
+            bg-blue-600 text-white
+            px-10 py-3 rounded-xl font-semibold
+            shadow-md transition-all duration-300
+            hover:bg-orange-500 hover:shadow-orange-400/40
+            hover:-translate-y-1
+          "
         >
           Join Us Now
         </button>
 
         <Link to="/about">
           <button
-            className="border-2 border-blue-600 text-blue-600 px-10 py-3 
-                       rounded-xl font-semibold shadow-sm transition-all duration-300
-                       hover:bg-orange-500 hover:text-white hover:border-orange-500 
-                       hover:-translate-y-1"
+            className="
+              border-2 border-blue-600 text-blue-600
+              px-10 py-3 rounded-xl font-semibold
+              transition-all duration-300
+              hover:bg-orange-500 hover:text-white hover:border-orange-500
+              hover:-translate-y-1
+            "
           >
             Read More
           </button>
@@ -69,68 +85,106 @@ const AboutHome = () => {
 
       {/* Modal */}
       {showForm && (
-        <div className="fixed inset-0 flex items-center justify-center 
-                        bg-black bg-opacity-70 backdrop-blur-sm z-50">
-          <div className="bg-white w-full max-w-lg p-6 md:p-8 
-                          rounded-2xl shadow-2xl relative animate-fadeIn">
+        <div className="
+          fixed inset-0 z-50 flex items-center justify-center
+          bg-black/70 backdrop-blur-sm px-4
+        ">
+          <div className="
+            bg-white w-full max-w-lg
+            p-6 sm:p-8
+            rounded-2xl shadow-2xl
+            relative animate-fadeIn
+          ">
             
+            {/* Close Button */}
             <button
-              onClick={handleFormToggle}
-              className="absolute top-3 right-4 text-gray-400 
-                         hover:text-red-500 text-3xl transition"
+              onClick={toggleForm}
+              aria-label="Close"
+              className="
+                absolute top-3 right-4
+                text-gray-400 text-3xl
+                hover:text-red-500 transition
+              "
             >
               &times;
             </button>
 
-            <h2 className="text-xl md:text-2xl font-bold text-center 
-                           text-gray-800 mb-6">
+            {/* Modal Title */}
+            <h2 className="
+              text-xl sm:text-2xl font-bold
+              text-center text-gray-800
+              mb-6
+            ">
               Get in Touch
             </h2>
 
-            <form ref={form} onSubmit={sendEmail}>
-              {["Name", "Email", "Phone Number", "Message"].map((field, idx) => (
-                <div className="mb-4" key={idx}>
-                  <label className="block text-gray-700 text-sm font-medium mb-1">
-                    {field}
+            {/* Form */}
+            <form ref={formRef} onSubmit={sendEmail} className="space-y-4">
+              
+              {[
+                { label: "Name", name: "from_name", type: "text" },
+                { label: "Email", name: "from_email", type: "email" },
+                { label: "Phone Number", name: "from_phone", type: "text" },
+              ].map((field, idx) => (
+                <div key={idx}>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    {field.label}
                   </label>
-
-                  {field === "Message" ? (
-                    <textarea
-                      name="message"
-                      placeholder={`Enter your ${field}`}
-                      className="w-full px-4 py-2 border rounded-lg
-                                 focus:ring-2 focus:ring-orange-500
-                                 transition"
-                    ></textarea>
-                  ) : (
-                    <input
-                      name={`from_${field.toLowerCase().replace(" ", "_")}`}
-                      type={field === "Email" ? "email" : "text"}
-                      placeholder={`Enter your ${field}`}
-                      className="w-full px-4 py-2 border rounded-lg
-                                 focus:ring-2 focus:ring-orange-500
-                                 transition"
-                    />
-                  )}
+                  <input
+                    type={field.type}
+                    name={field.name}
+                    placeholder={`Enter your ${field.label}`}
+                    required
+                    className="
+                      w-full px-4 py-2
+                      border rounded-lg
+                      focus:ring-2 focus:ring-orange-500
+                      outline-none transition
+                    "
+                  />
                 </div>
               ))}
 
-              <div className="text-center mt-8">
+              {/* Message */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Message
+                </label>
+                <textarea
+                  name="message"
+                  rows="4"
+                  placeholder="Enter your message"
+                  required
+                  className="
+                    w-full px-4 py-2
+                    border rounded-lg
+                    focus:ring-2 focus:ring-orange-500
+                    outline-none transition
+                  "
+                />
+              </div>
+
+              {/* Submit */}
+              <div className="text-center pt-4">
                 <button
                   type="submit"
-                  className="bg-blue-600 text-white px-12 py-3 
-                             rounded-xl font-semibold transition-all duration-300
-                             hover:bg-orange-500 hover:shadow-lg
-                             hover:-translate-y-1"
+                  className="
+                    bg-blue-600 text-white
+                    px-12 py-3 rounded-xl font-semibold
+                    transition-all duration-300
+                    hover:bg-orange-500 hover:shadow-lg
+                    hover:-translate-y-1
+                  "
                 >
                   Submit
                 </button>
               </div>
+
             </form>
           </div>
         </div>
       )}
-    </div>
+    </section>
   );
 };
 
