@@ -14,10 +14,10 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>Top IT Training Institute in Pune | ArrayLogic Academy</title>
+        <title>Top IT Training Institute in Pune | DIGITALORBIT SOLUTIONS LLP</title>
         <meta
           name="description"
-          content="Join ArrayLogic Academy, Pune's best IT training institute, for courses in Java Full Stack, MERN Stack, MEAN Stack, Python Full Stack, Cloud Computing, Data Science, Machine Learning, Artificial Intelligence, and more. Kickstart your tech career with expert guidance."
+          content="Join DIGITALORBIT SOLUTIONS LLP, Pune's best IT training institute, for courses in Java Full Stack, MERN Stack, MEAN Stack, Python Full Stack, Cloud Computing, Data Science, Machine Learning, Artificial Intelligence, and more. Kickstart your tech career with expert guidance."
         />
         <meta
           name="keywords"
@@ -26,7 +26,7 @@ function Home() {
         <meta property="og:title" content="Top IT Training Institute in Pune | ArrayLogic Academy" />
         <meta
           property="og:description"
-          content="Learn from industry experts at ArrayLogic Academy, Pune's top IT training institute. Specializing in Java, MERN, MEAN, Python, Data Science, Cloud Computing, AI, and more, we prepare you for a successful tech career."
+          content="Learn from industry experts at DIGITALORBIT SOLUTIONS LLP, Pune's top IT training institute. Specializing in Java, MERN, MEAN, Python, Data Science, Cloud Computing, AI, and more, we prepare you for a successful tech career."
         />
         <meta property="og:image" content="https://www.arraylogicacademy.in/assets/og-image.jpg" />
         <meta property="og:url" content="https://www.arraylogicacademy.in" />
@@ -34,7 +34,7 @@ function Home() {
         <meta name="twitter:title" content="Top IT Training Institute in Pune | ArrayLogic Academy" />
         <meta
           name="twitter:description"
-          content="ArrayLogic Academy offers professional IT training in Pune with courses in Java Full Stack, MERN, MEAN, Data Science, AI, Cloud Computing, and more. Enroll today to advance your tech career."
+          content="DIGITALORBIT SOLUTIONS LLP is a leading IT Training and Development company based in Sonai, Ahmednagar. We specialise in AI, Software Development, Web & App Development, Cloud Technologies, and Professional IT Training Our Core Services IT Training & Certification Programs AI & Machine Learning Training Web and Mobile App Development Software Development & IT Solutions Internship & Industrial Training Career Guidance & Skill Development."
         />
         <meta name="twitter:image" content="https://www.arraylogicacademy.in/assets/twitter-image.jpg" />
         <meta name="author" content="ArrayLogic Academy" />
