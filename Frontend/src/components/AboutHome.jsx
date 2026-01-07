@@ -55,33 +55,41 @@ const AboutHome = () => {
 
       {/* CTA Buttons */}
       <div className="mt-12 flex flex-col sm:flex-row justify-center gap-4">
-        <button
-          onClick={toggleForm}
-          className="
-            bg-blue-600 text-white
-            px-10 py-3 rounded-xl font-semibold
-            shadow-md transition-all duration-300
-            hover:bg-orange-500 hover:shadow-orange-400/40
-            hover:-translate-y-1
-          "
-        >
-          Join Us Now
-        </button>
 
-        <Link to="/about">
-          <button
-            className="
-              border-2 border-blue-600 text-blue-600
-              px-10 py-3 rounded-xl font-semibold
-              transition-all duration-300
-              hover:bg-orange-500 hover:text-white hover:border-orange-500
-              hover:-translate-y-1
-            "
-          >
-            Read More
-          </button>
-        </Link>
-      </div>
+  <button
+    onClick={toggleForm}
+    className="
+      w-full sm:w-auto
+      min-w-[200px]
+      bg-blue-600 text-white
+      px-10 py-3 rounded-xl font-semibold
+      shadow-md transition-all duration-300
+      hover:bg-orange-500 hover:shadow-orange-400/40
+      hover:-translate-y-1
+      text-center
+    "
+  >
+    Join Us Now
+  </button>
+
+  <Link to="/about" className="w-full sm:w-auto">
+    <button
+      className="
+        w-full sm:w-auto
+        min-w-[200px]
+        border-2 border-blue-600 text-blue-600
+        px-10 py-3 rounded-xl font-semibold
+        transition-all duration-300
+        hover:bg-orange-500 hover:text-white hover:border-orange-500
+        hover:-translate-y-1
+        text-center
+      "
+    >
+      Read More
+    </button>
+  </Link>
+
+</div>
 
       {/* Modal */}
       {showForm && (

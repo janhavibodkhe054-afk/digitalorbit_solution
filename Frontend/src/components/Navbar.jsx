@@ -43,12 +43,26 @@ function Navbar() {
       <div className="max-w-screen-2xl mx-auto px-4 md:px-20 flex items-center justify-between py-3">
         
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-3">
-          <img src="/onlylogo.png" alt="DIGITALORBIT SOLUTIONS LLP" className="h-10 w-10 object-contain" />
-          <span className={`hidden sm:block md:text-xl font-bold cursor-pointer transition-colors duration-300 ${sticky ? "text-white" : "text-blue-900"}`}>
-            DIGITALORBIT SOLUTIONS LLP
-          </span>
-        </Link>
+        {/* Logo */}
+<Link to="/" className="flex items-center gap-2">
+  <img
+    src="/onlylogo.png"
+    alt="DIGITALORBIT SOLUTIONS LLP"
+    className="h-9 w-9 sm:h-10 sm:w-10 object-contain"
+  />
+
+  <span
+    className={`
+      font-bold cursor-pointer transition-colors duration-300
+      text-sm sm:text-base md:text-xl
+      ${sticky ? "text-white" : "text-blue-900"}
+      whitespace-nowrap
+    `}
+  >
+    DIGITALORBIT SOLUTIONS LLP
+  </span>
+</Link>
+
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center space-x-8">
