@@ -63,7 +63,7 @@ const Internships = () => {
       
       {/* Header */}
       <h1 className="text-center text-2xl md:text-4xl font-extrabold mb-4 text-gray-900">
-        IT Internship Programs at DIGITALORBIT SOLUTIONS LLP
+        IT Internship Programs at DIGITALORBIT SOLUTIONS 
       </h1>
 
       <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12 text-sm md:text-base">

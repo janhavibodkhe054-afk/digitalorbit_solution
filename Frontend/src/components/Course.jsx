@@ -90,34 +90,47 @@ const Course = () => {
       </div>
       <div className="max-w-screen-2xl container mx-auto md:px-18 px-3">
         {/* Header Section */}
-        <div className="mt-3 md:mt-5 text-center space-y-4">
-          <h1 className="text-xl font-extrabold text-red-600 md:text-4xl">
-            Shape Your Future with DIGITALORBIT SOLUTIONS LLP's In-Demand
-            Software Courses
-          </h1>
-          <h1 className=" text-sm md:text-lg text-black text-left mt-0 md:mt-2 px-2 md:px-10">
-            Welcome to DIGITALORBIT SOLUTIONS LLP, your destination for Software
-            Courses and IT Training Programs! Whether you're a beginner ready to
-            kickstart your tech career or an experienced professional aiming to
-            upgrade your skills, we offer the Best IT Job-Oriented Courses in
-            AI, Software Development, Web & App Development, Cloud Technologies,
-            and Professional IT Training Our Core Services IT Training &
-            Certification Programs AI & Machine Learning Training Web and Mobile
-            App Development Software Development & IT Solutions Internship &
-            Industrial Training Career Guidance & Skill Development "Launch your
-            career with ArrayLogic Academy's job-ready Software Courses!"
-          </h1>
-          <h1 className="mt-4 text-xl md:text-2xl text-black">
-            Launch your career with DIGITALORBIT SOLUTIONS LLP's job-ready Software
-            Courses!
-          </h1>
+        <div className="max-w-5xl mx-auto mt-10 md:mt-16 px-4 md:px-0 text-center">
+  {/* Main Heading */}
+  <h1 className="text-2xl md:text-4xl font-extrabold text-blue-900 leading-snug mb-6">
+    Shape Your Future with <span className="text-orange-500">DIGITALORBIT SOLUTIONS</span>'s In-Demand Software Courses
+  </h1>
 
-          <Link to={"/"}>
-            <button className="mt-5 bg-gradient-to-r from-red-500 to-red-700 text-white px-6 py-3 rounded-lg shadow-lg transform hover:scale-105 transition-all duration-300 ease-in-out">
-              Back
-            </button>
-          </Link>
-        </div>
+  {/* Subheading / Description */}
+  <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-6 text-left md:text-center">
+    Welcome to <strong>DIGITALORBIT SOLUTIONS</strong>, your destination for professional IT training and software courses. 
+    Whether you're a beginner ready to kickstart your tech career or an experienced professional aiming to upgrade your skills, 
+    we provide industry-oriented courses in AI, Software Development, Web & App Development, Cloud Technologies, and more.
+  </p>
+
+  {/* Services Highlight Box */}
+  <div className="bg-blue-50 border-l-4 border-blue-900 rounded-lg p-6 md:p-8 mb-6 text-left shadow-md">
+    <h3 className="text-lg md:text-xl font-semibold text-blue-900 mb-4">
+      Our Core Services:
+    </h3>
+    <ul className="list-disc list-inside space-y-2 text-gray-700 text-sm md:text-base">
+      <li>IT Training & Certification Programs</li>
+      <li>AI & Machine Learning Training</li>
+      <li>Web & Mobile App Development</li>
+      <li>Software Development & IT Solutions</li>
+      <li>Internship & Industrial Training</li>
+      <li>Career Guidance & Skill Development</li>
+    </ul>
+  </div>
+
+  {/* Motivational CTA Line */}
+  <p className="text-gray-800 text-lg md:text-xl font-semibold mb-6">
+    Launch your career with <span className="text-orange-500">DIGITALORBIT SOLUTIONS LLP</span>'s job-ready software courses!
+  </p>
+
+  {/* Back Button */}
+  <Link to="/">
+    <button className="bg-gradient-to-r from-blue-900 to-blue-700 text-white px-8 py-3 rounded-lg shadow-lg hover:scale-105 transform transition-all duration-300 ease-in-out">
+      Back
+    </button>
+  </Link>
+</div>
+
 
         {/* Course Cards Section */}
         <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
@@ -127,12 +140,12 @@ const Course = () => {
         </div>
         <hr className="border-t-4 border-black font-extrabold mt-5" />
 
-        <div className="container mx-auto px-1 md:px-6 py-8">
-          <h2 className="text-xl md:text-4xl font-bold text-center mb-3  text-red-500">
-            DIGITALORBIT SOLUTIONS LLP IT Training Institute: Trending Software Courses
+        <div className="container mx-auto px-1 md:px-6 pb-8 pt-20">
+          <h2 className="text-xl md:text-4xl font-bold text-center mb-3  text-blue-900">
+            DIGITALORBIT SOLUTIONS IT Training Institute: Trending Software Courses
           </h2>
           <h2 className=" md:px-8 px-1 text-sm md:text-lg  mb-8">
-            At DIGITALORBIT SOLUTIONS LLP IT Courses Institute, we are dedicated to
+            At DIGITALORBIT SOLUTIONS IT Courses Institute, we are dedicated to
             training students from diverse backgrounds, making it easier for
             them to learn and thrive in the IT industry. Our mission is to
             create a future where anyone passionate about software development

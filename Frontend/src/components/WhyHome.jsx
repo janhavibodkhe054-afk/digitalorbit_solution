@@ -1,80 +1,64 @@
 function WhyHome() {
   return (
-    <div className="flex flex-col md:flex-row justify-between items-start p-6 md:p-10 bg-gray-50 gap-8">
+    <section className="max-w-7xl mx-auto px-4 py-20">
       
-      {/* Left Side - Why Us Content */}
-      <div className="w-full md:w-1/2 p-6 md:p-8 bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
-        <h3 className="text-xl md:text-3xl font-extrabold text-blue-700 mb-4">
-          Why Choose DIGITALORBIT SOLUTIONS LLP?
-        </h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
+        
+        {/* LEFT CONTENT */}
+        <div
+          className="h-full bg-white rounded-2xl border border-slate-200
+                     shadow-sm hover:shadow-xl transition-all duration-300
+                     p-8 md:p-10 flex flex-col"
+        >
+          <h3 className="text-2xl md:text-3xl font-extrabold text-[#0b1c2d] mb-4">
+            Why Choose <span className="text-sky-600">DIGITALORBIT SOLUTIONS</span>?
+          </h3>
 
-        <p className="text-gray-600 mb-5 text-sm md:text-base leading-relaxed">
-          DIGITALORBIT SOLUTIONS LLP is committed to delivering industry-focused
-          IT education and technology solutions that prepare learners for
-          real-world challenges and long-term career success.
-        </p>
+          <p className="text-slate-600 mb-6 leading-relaxed">
+            DIGITALORBIT SOLUTIONS is committed to delivering industry-focused
+            IT education and technology solutions that prepare learners for
+            real-world challenges and long-term career success.
+          </p>
 
-        <ul className="space-y-3 text-gray-700 text-sm md:text-base">
-          <li className="flex gap-2">
-            <span className="text-blue-600 font-bold">✔</span>
-            <span>
-              <strong>Industry-Relevant Training:</strong> Curriculum aligned
-              with current technologies, tools, and market demands.
-            </span>
-          </li>
+          <ul className="space-y-4 text-slate-700 text-sm md:text-base">
+            {[
+              "Industry-Relevant Training aligned with current technologies",
+              "Practical & Project-Based hands-on learning",
+              "Experienced trainers with real industry exposure",
+              "Internship & placement assistance",
+              "Affordable & flexible learning programs",
+              "Career guidance, resume building & interview prep",
+            ].map((item, index) => (
+              <li key={index} className="flex gap-3 items-start">
+                <span className="mt-1 w-5 h-5 flex items-center justify-center rounded-full bg-sky-100 text-sky-600 text-xs font-bold">
+                  ✓
+                </span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
 
-          <li className="flex gap-2">
-            <span className="text-blue-600 font-bold">✔</span>
-            <span>
-              <strong>Practical & Project-Based Learning:</strong> Hands-on
-              training with real-time projects and use-case scenarios.
-            </span>
-          </li>
+          {/* Spacer to keep height equal */}
+          <div className="mt-auto" />
+        </div>
 
-          <li className="flex gap-2">
-            <span className="text-blue-600 font-bold">✔</span>
-            <span>
-              <strong>Experienced Trainers & Mentors:</strong> Learn from
-              professionals with strong industry exposure.
-            </span>
-          </li>
+        {/* RIGHT IMAGE */}
+        <div
+          className="h-full bg-white rounded-2xl border border-slate-200
+                     shadow-sm hover:shadow-xl transition-all duration-300
+                     p-6 flex items-center"
+        >
+          <img
+            src="./WhyUs.jpeg"
+            alt="Why Choose DigitalOrbit Solutions"
+            className="w-full h-full object-cover rounded-xl
+                       transform hover:scale-[1.03] transition-transform duration-500"
+            loading="lazy"
+          />
+        </div>
 
-          <li className="flex gap-2">
-            <span className="text-blue-600 font-bold">✔</span>
-            <span>
-              <strong>Internship & Placement Assistance:</strong> Real-world
-              exposure with internship programs and career support.
-            </span>
-          </li>
-
-          <li className="flex gap-2">
-            <span className="text-blue-600 font-bold">✔</span>
-            <span>
-              <strong>Affordable & Flexible Learning:</strong> High-quality
-              education with flexible schedules and cost-effective plans.
-            </span>
-          </li>
-
-          <li className="flex gap-2">
-            <span className="text-blue-600 font-bold">✔</span>
-            <span>
-              <strong>Career Guidance & Skill Development:</strong> Resume
-              building, interview prep, and soft-skill enhancement.
-            </span>
-          </li>
-        </ul>
       </div>
-
-      {/* Right Side - Image */}
-      <div className="hidden md:flex w-full md:w-1/2 justify-center items-center p-6 bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
-        <img
-          src="./WhyUs.jpeg"
-          alt="Why Choose DigitalOrbit Solutions"
-          className="w-full h-auto rounded-xl transform hover:scale-[1.02] transition-transform duration-300"
-          loading="lazy"
-        />
-      </div>
-    </div>
+    </section>
   );
 }
 

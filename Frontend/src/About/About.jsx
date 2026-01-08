@@ -9,7 +9,7 @@ function About() {
     <>
       {/* SEO */}
       <Helmet>
-        <title>About ArrayLogic Academy | Leading IT Training Institute in Pune</title>
+        <title>About DIGITALORBIT SOLUTIONS | Leading IT Training Institute in Pune</title>
         <meta
           name="description"
           content="Learn about ArrayLogic Academy, Pune's premier IT training institute. We offer expert-led courses in Java Full Stack, MERN, MEAN, Data Science, Cloud Computing, AI, and more."

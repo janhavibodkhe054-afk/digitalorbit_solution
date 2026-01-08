@@ -21,62 +21,63 @@ const ServiceSlider = () => {
       title: "Java Full Stack",
       img: "./JavaFullStack.webp",
       desc:
-        "Enterprise-level application development using Java, Spring Boot, Hibernate, REST APIs, HTML, CSS, JavaScript, SQL, Git.",
+        "Java, Spring Boot, Hibernate, REST APIs, HTML, CSS, JavaScript, SQL, Git.",
     },
     {
       title: "Python Full Stack",
       img: "./PythonFullStack.webp",
       desc:
-        "Develop scalable web applications using Python, Django, Flask, REST APIs, PostgreSQL, HTML, CSS, and JavaScript.",
+        "Python, Django, Flask, REST APIs, PostgreSQL, HTML, CSS, JavaScript.",
     },
     {
       title: "MERN Stack",
       img: "./MERN.webp",
       desc:
-        "Build modern web apps with MongoDB, Express, React, Node.js, Redux, REST APIs, and full JavaScript ecosystem.",
+        "Modern web apps using MongoDB, Express, React, Node.js, Redux, REST APIs.",
     },
     {
       title: "MEAN Stack",
       img: "./MEAN.webp",
       desc:
-        "Create high-performance applications using MongoDB, Express, Angular, Node.js, and RESTful services.",
+        "High-performance apps using MongoDB, Express, Angular, Node.js.",
     },
     {
       title: "Data Science",
       img: "./DataScience.webp",
       desc:
-        "Hands-on data analysis, visualization, machine learning, statistics, Python libraries, and data-driven decision making.",
+        "Data analysis, visualization, ML, statistics, Python libraries.",
     },
     {
       title: "AI & Machine Learning",
       img: "./AIML.webp",
       desc:
-        "Learn ML algorithms, neural networks, deep learning, NLP, TensorFlow, PyTorch, and real-world AI applications.",
+        "ML algorithms, deep learning, NLP, TensorFlow, PyTorch.",
     },
     {
-      title: "DevOps & Cloud Computing",
+      title: "DevOps & Cloud",
       img: "./DEVOPS.webp",
       desc:
-        "Master CI/CD, Docker, Kubernetes, automation, AWS, Azure, and cloud-native deployment strategies.",
+        "CI/CD, Docker, Kubernetes, AWS, Azure, automation.",
     },
     {
       title: "Software Testing",
       img: "./TESTING.webp",
       desc:
-        "Manual & automation testing using Selenium, TestNG, JUnit, CI/CD tools to ensure software quality.",
+        "Manual & automation testing using Selenium, TestNG, CI/CD tools.",
     },
     {
       title: "UI/UX Design",
       img: "./UIUX.webp",
       desc:
-        "Design intuitive user interfaces using Figma, Adobe XD, wireframing, prototyping, and usability testing.",
+        "UI/UX design with Figma, wireframes, prototyping, usability testing.",
     },
   ];
 
   return (
-    <div className="max-w-screen-2xl mx-auto pt-28 md:pt-32 pb-12 px-4 relative">
+    <section className="max-w-screen-2xl mx-auto pt-28 md:pt-32 pb-16 px-4 relative">
       
-      <h2 className="text-center text-xl md:text-4xl font-extrabold text-gray-900 mb-8">
+      {/* Heading */}
+      <h2 className="text-center text-2xl md:text-4xl font-extrabold text-blue-900 mb-12">
         Industry-Focused IT Training Programs
       </h2>
 
@@ -85,7 +86,7 @@ const ServiceSlider = () => {
         spaceBetween={30}
         slidesPerView={1}
         loop
-        autoplay={{ delay: 3000, disableOnInteraction: false }}
+        autoplay={{ delay: 3500, disableOnInteraction: false }}
         breakpoints={{
           640: { slidesPerView: 2 },
           768: { slidesPerView: 3 },
@@ -93,35 +94,45 @@ const ServiceSlider = () => {
         }}
       >
         {courses.map((course, index) => (
-          <SwiperSlide
-            key={index}
-            className="group bg-white p-6 rounded-2xl border border-gray-200 shadow-md
-                       hover:shadow-2xl hover:border-orange-500 transition-all duration-300"
-          >
-            <img
-              src={course.img}
-              alt={course.title}
-              className="w-full aspect-video object-cover rounded-xl mb-4"
-              loading="lazy"
-            />
+          <SwiperSlide key={index} className="h-auto">
+            {/* CARD */}
+            <div
+              className="group h-full bg-white rounded-2xl border border-slate-200
+                         shadow-sm hover:shadow-xl transition-all duration-300
+                         flex flex-col p-6"
+            >
+              {/* Image */}
+              <img
+                src={course.img}
+                alt={course.title}
+                className="w-full h-40 object-cover rounded-xl mb-4"
+                loading="lazy"
+              />
 
-            <h3 className="text-xl font-bold text-blue-700 mb-2 group-hover:text-orange-600 transition-colors">
-              {course.title}
-            </h3>
+              {/* Title */}
+              <h3 className="text-lg font-bold text-[#0b1c2d] mb-2 group-hover:text-sky-600 transition-colors">
+                {course.title}
+              </h3>
 
-            <p className="text-sm text-gray-600 mb-4 leading-relaxed">
-              {course.desc}
-            </p>
+              {/* Description */}
+              <p className="text-sm text-slate-600 leading-relaxed line-clamp-4 mb-6">
+                {course.desc}
+              </p>
 
-            <Link to="/course">
-              <button
-                className="w-full bg-black text-white py-2 rounded-lg font-semibold
-                           hover:bg-orange-500 transition-all duration-300"
-                onClick={() => window.scrollTo(0, 0)}
-              >
-                Learn More
-              </button>
-            </Link>
+              {/* Button aligned bottom */}
+              <div className="mt-auto">
+                <Link to="/course">
+                  <button
+                    className="w-full bg-[#0b1c2d] text-white py-2.5 rounded-lg
+                               font-semibold tracking-wide
+                               hover:bg-sky-600 transition-all duration-300"
+                    onClick={() => window.scrollTo(0, 0)}
+                  >
+                    Learn More
+                  </button>
+                </Link>
+              </div>
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
@@ -129,7 +140,11 @@ const ServiceSlider = () => {
       {/* Navigation Arrows */}
       <div
         className={`absolute top-1/2 left-4 -translate-y-1/2 p-3 rounded-full cursor-pointer z-10
-          ${activeArrow === "prev" ? "bg-orange-500" : "bg-gray-800"} text-white`}
+        transition-all ${
+          activeArrow === "prev"
+            ? "bg-sky-600"
+            : "bg-[#0b1c2d]"
+        } text-white`}
         onClick={() => handleArrowClick("prev")}
       >
         &lt;
@@ -137,12 +152,16 @@ const ServiceSlider = () => {
 
       <div
         className={`absolute top-1/2 right-4 -translate-y-1/2 p-3 rounded-full cursor-pointer z-10
-          ${activeArrow === "next" ? "bg-orange-500" : "bg-gray-800"} text-white`}
+        transition-all ${
+          activeArrow === "next"
+            ? "bg-sky-600"
+            : "bg-[#0b1c2d]"
+        } text-white`}
         onClick={() => handleArrowClick("next")}
       >
         &gt;
       </div>
-    </div>
+    </section>
   );
 };
 
