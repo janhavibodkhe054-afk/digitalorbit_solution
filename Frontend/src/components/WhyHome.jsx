@@ -7,8 +7,7 @@ function WhyHome() {
         {/* LEFT CONTENT */}
         <div
           className="h-full bg-white rounded-2xl border border-slate-200
-                     shadow-sm hover:shadow-xl transition-all duration-300
-                     p-8 md:p-10 flex flex-col"
+                     shadow-sm p-8 md:p-10 flex flex-col"
         >
           <h3 className="text-2xl md:text-3xl font-extrabold text-[#0b1c2d] mb-4">
             Why Choose <span className="text-sky-600">DIGITALORBIT SOLUTIONS</span>?
@@ -45,14 +44,12 @@ function WhyHome() {
         {/* RIGHT IMAGE */}
         <div
           className="h-full bg-white rounded-2xl border border-slate-200
-                     shadow-sm hover:shadow-xl transition-all duration-300
-                     p-6 flex items-center"
+                     shadow-sm p-6 flex items-center"
         >
           <img
             src="./WhyUs.jpeg"
             alt="Why Choose DigitalOrbit Solutions"
-            className="w-full h-full object-cover rounded-xl
-                       transform hover:scale-[1.03] transition-transform duration-500"
+            className="w-full h-full object-cover rounded-xl"
             loading="lazy"
           />
         </div>

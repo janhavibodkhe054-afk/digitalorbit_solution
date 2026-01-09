@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 
 const services = [
   {
@@ -40,10 +40,31 @@ const services = [
 ];
 
 const Companies = () => {
+  const carouselRef = useRef(null);
+  const scrollPos = useRef(0);
+
+  useEffect(() => {
+    const container = carouselRef.current;
+    if (!container) return;
+
+    const speed = 0.6; // slow & smooth
+
+    const autoScroll = () => {
+      scrollPos.current += speed;
+
+      if (scrollPos.current >= container.scrollWidth / 2) {
+        scrollPos.current = 0;
+      }
+
+      container.scrollLeft = scrollPos.current;
+      requestAnimationFrame(autoScroll);
+    };
+
+    requestAnimationFrame(autoScroll);
+  }, []);
+
   return (
     <section className="w-full py-20 overflow-hidden bg-slate-50">
-
-      
       {/* Heading */}
       <h3 className="text-center text-2xl md:text-4xl font-extrabold text-blue-900 mb-4">
         Our Services
@@ -54,61 +75,39 @@ const Companies = () => {
         technology solutions designed to empower careers and businesses.
       </p>
 
-      {/* Auto Scroll Carousel */}
-      <div className="relative">
-        <div className="flex gap-8 animate-scroll hover:[animation-play-state:paused]">
-          {[...services, ...services].map((service, index) => (
-            <div
-              key={index}
-              className="min-w-[300px] md:min-w-[360px]
-                         bg-white rounded-2xl border border-slate-200
-                         shadow-md hover:shadow-2xl
-                         transition-all duration-300 hover:-translate-y-2
-                         overflow-hidden"
-            >
-              {/* Image */}
-              <div className="h-44 overflow-hidden">
-                <img
-                  src={service.img}
-                  alt={service.title}
-                  className="w-full h-full object-cover
-                             hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                />
-              </div>
-
-              {/* Content */}
-              <div className="p-6">
-                <h4 className="text-lg md:text-xl font-bold text-blue-900 mb-3">
-                  {service.title}
-                </h4>
-
-                <p className="text-slate-600 text-sm md:text-base leading-relaxed">
-                  {service.description}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+      {/* Carousel */}
+      <div
+  ref={carouselRef}
+  className="flex gap-8 overflow-hidden"
+>
+  {[...services, ...services].map((service, index) => (
+    <div
+      key={index}
+      className="min-w-[300px] md:min-w-[360px] h-[440px]
+                 bg-white rounded-2xl border border-slate-200
+                 shadow-md flex flex-col overflow-hidden"
+    >
+      <div className="h-48">
+        <img
+          src={service.img}
+          alt={service.title}
+          className="w-full h-full object-cover"
+        />
       </div>
 
-      {/* Animation */}
-      <style>
-        {`
-          @keyframes scroll {
-            0% {
-              transform: translateX(0);
-            }
-            100% {
-              transform: translateX(-50%);
-            }
-          }
+      <div className="p-6 flex flex-col flex-1">
+        <h4 className="text-lg md:text-xl font-bold text-blue-900 mb-3">
+          {service.title}
+        </h4>
 
-          .animate-scroll {
-            animation: scroll 15s linear infinite;
-          }
-        `}
-      </style>
+        <p className="text-slate-600 text-sm md:text-base leading-relaxed break-words">
+          {service.description}
+        </p>
+      </div>
+    </div>
+  ))}
+</div>
+
     </section>
   );
 };

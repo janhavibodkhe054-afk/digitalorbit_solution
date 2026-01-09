@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-import ArrayHome3 from "../../public/ArrayHome3.webp";
+
 import Footer from "./Footer";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
@@ -42,7 +42,7 @@ function Project() {
       {/* Image Section */}
       <div className="mt-12">
         <img
-          src={ArrayHome3}
+          src="/ArrayHome3.webp"
           alt="Image Coming Soon"
           className="w-full h-auto object-cover"
         />
