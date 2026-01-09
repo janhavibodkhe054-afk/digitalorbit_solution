@@ -69,7 +69,7 @@ const InternshipOpportunities = () => {
         Internship Opportunities
       </h4>
       <p className="text-center text-sm md:text-lg mb-5 md:mb-8 text-black">
-        Boost Your Career with Internships at ArrayLogic Academy – Top IT Courses Institute. 
+        Boost Your Career with Internships at DIGITALORBIT SOLUTIONS LLP – Top IT Courses Institute. 
         Join our hands-on internship programs and kickstart your career with real-world experience in the latest technologies. We offer certification and job-ready skills.
       </p>
 

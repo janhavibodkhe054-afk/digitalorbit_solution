@@ -33,14 +33,14 @@ function Project() {
     <>
       {/* SEO */}
       <Helmet>
-        <title>Contact Us | Hire a Developer | ArrayLogic Academy</title>
+        <title>Contact Us | Hire a Developer | DIGITALORBIT SOLUTIONS LLP</title>
         <meta
           name="description"
-          content="Looking to hire skilled developers? Fill out the form to connect with ArrayLogic Academy's talented professionals. Start your project today!"
+          content="Looking to hire skilled developers? Fill out the form to connect with DIGITALORBIT SOLUTIONS LLP's talented professionals. Start your project today!"
         />
         <meta
           name="keywords"
-          content="hire developers, contact ArrayLogic Academy, skilled IT professionals, project developers, software developers, hire developers in Pune"
+          content="hire developers, contact DIGITALORBIT SOLUTIONS LLP, skilled IT professionals, project developers, software developers, hire developers in Pune"
         />
       </Helmet>
 

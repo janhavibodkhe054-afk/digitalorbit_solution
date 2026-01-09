@@ -12,19 +12,19 @@ function About() {
         <title>About DIGITALORBIT SOLUTIONS | Leading IT Training Institute in Pune</title>
         <meta
           name="description"
-          content="Learn about ArrayLogic Academy, Pune's premier IT training institute. We offer expert-led courses in Java Full Stack, MERN, MEAN, Data Science, Cloud Computing, AI, and more."
+          content="Learn about DIGITALORBIT SOLUTIONS LLP, Pune's premier IT training institute. We offer expert-led courses in Java Full Stack, MERN, MEAN, Data Science, Cloud Computing, AI, and more."
         />
         <meta
           name="keywords"
-          content="IT training institute Pune, ArrayLogic Academy Pune, Java Full Stack courses Pune, MERN Stack courses, MEAN Stack courses, Python Full Stack, Data Science, Cloud Computing, Machine Learning, AI courses, Best IT institute Pune, software development training, technology career Pune, professional IT training,About ArrayLogic Academy, IT training institute Pune, Java Full Stack training, MERN Stack courses, MEAN Stack training, Data Science training Pune, Cloud Computing academy, Artificial Intelligence courses, top IT institute Pune, expert IT trainers, career-focused training programs"
+          content="IT training institute Pune, DIGITALORBIT SOLUTIONS LLP, Java Full Stack courses Pune, MERN Stack courses, MEAN Stack courses, Python Full Stack, Data Science, Cloud Computing, Machine Learning, AI courses, Best IT institute Pune, software development training, technology career Pune, professional IT training,About ArrayLogic Academy, IT training institute Pune, Java Full Stack training, MERN Stack courses, MEAN Stack training, Data Science training Pune, Cloud Computing academy, Artificial Intelligence courses, top IT institute Pune, expert IT trainers, career-focused training programs"
         />
         <meta
           property="og:title"
-          content="About ArrayLogic Academy | Leading IT Training Institute in Pune"
+          content="About DIGITALORBIT SOLUTIONS LLP | Leading IT Training Institute in Pune"
         />
         <meta
           property="og:description"
-          content="Discover why ArrayLogic Academy is the trusted choice for IT training. We specialize in advanced courses to prepare you for a thriving tech career."
+          content="Discover why DIGITALORBIT SOLUTIONS LLP is the trusted choice for IT training. We specialize in advanced courses to prepare you for a thriving tech career."
         />
         <meta
           property="og:url"
@@ -37,11 +37,11 @@ function About() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="About ArrayLogic Academy | Leading IT Training Institute in Pune"
+          content="About DIGITALORBIT SOLUTIONS LLP | Leading IT Training Institute in Pune"
         />
         <meta
           name="twitter:description"
-          content="Explore ArrayLogic Academy's mission, values, and expertise in providing top-notch IT training courses in Pune."
+          content="Explore DIGITALORBIT SOLUTIONS LLP's mission, values, and expertise in providing top-notch IT training courses in Pune."
         />
         <meta
           name="twitter:image"

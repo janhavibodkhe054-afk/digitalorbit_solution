@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 const slides = [
-  "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg",
-  "https://www.insightit.in/wp-content/uploads/2024/11/image.png",
-  "https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg",
+  "/company6.jpeg",
+  "/banner2.jpeg",
+  "/banner3.png",
 ];
 
 const Banner = () => {

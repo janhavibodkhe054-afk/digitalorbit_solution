@@ -3,37 +3,37 @@ import React from "react";
 const services = [
   {
     title: "IT Training & Certification Programs",
-    img: "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg",
+    img: "/company1.jpeg",
     description:
       "Comprehensive training programs aligned with industry standards, hands-on learning, real-time projects, and globally recognized certifications.",
   },
   {
     title: "AI & Machine Learning Training",
-    img: "https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg",
+    img: "/company2.jpeg",
     description:
       "Use-case-driven AI & ML training covering data handling, model development, automation, and intelligent decision-making.",
   },
   {
     title: "Web & Mobile App Development",
-    img: "https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg",
+    img: "/company3.jpeg",
     description:
       "Design and development of scalable, modern websites and mobile applications using cutting-edge technologies.",
   },
   {
     title: "Software Development & IT Solutions",
-    img: "https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg",
+    img: "/company4.jpeg",
     description:
       "Custom software solutions tailored to business needs, ensuring efficiency, scalability, and performance.",
   },
   {
     title: "Internship & Industrial Training",
-    img: "https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg",
+    img: "/company5.jpeg",
     description:
       "Industry-oriented internships and industrial training with real-world exposure and live project experience.",
   },
   {
     title: "Career Guidance & Skill Development",
-    img: "https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg",
+    img: "/company6.jpeg",
     description:
       "Personalized career counseling, resume building, interview preparation, and soft-skill development.",
   },
@@ -41,7 +41,8 @@ const services = [
 
 const Companies = () => {
   return (
-    <section className="max-w-screen-xl mx-auto py-20 px-4 overflow-hidden bg-slate-50">
+    <section className="w-full py-20 overflow-hidden bg-slate-50">
+
       
       {/* Heading */}
       <h3 className="text-center text-2xl md:text-4xl font-extrabold text-blue-900 mb-4">

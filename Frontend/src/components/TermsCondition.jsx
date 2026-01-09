@@ -7,7 +7,7 @@ function TermsCondition() {
   return (
     <>
     <Helmet>
-  <title>Terms and Conditions | ArrayLogic Academy - IT Training Institute in Pune</title>
+  <title>Terms and Conditions | DIGITALORBIT SOLUTIONS LLP - IT Training Institute in Pune</title>
   <meta name="description" content="Read the terms and conditions for using the services offered by ArrayLogic Academy, the leading IT training institute in Pune. This page includes important legal information regarding our courses, internships, career services, and usage of our website." />
   <meta name="keywords" content="Terms and Conditions, ArrayLogic Academy, IT training institute Pune, website usage policy, course terms, internship program terms, career services terms, legal information, user agreement, privacy policy, website terms, IT course agreement, Pune IT training, usage guidelines" />
 </Helmet>

@@ -34,7 +34,7 @@ function Project() {
   return (
     <>
     <Helmet>
-  <title>Project Development for College Students & Clients | ArrayLogic Academy - IT Training in Pune</title>
+  <title>Project Development for College Students & Clients | DIGITALORBIT SOLUTIONS LLP - IT Training in Pune</title>
   <meta name="description" content="ArrayLogic Academy in Pune offers expert Project Development services for both college students and clients. Our IT training programs in Java, MERN, Python, Data Science, and AI enable students to work on real-world projects, while clients can collaborate with us for professional software development solutions." />
   <meta name="keywords" content="Project development for college students, client project development Pune, real-world IT projects, Java Full Stack projects, MERN Stack software development, Python project development, Data Science projects, AI development for clients, software development services Pune, hands-on IT training, college student project collaboration, client IT solutions, IT industry experience, project-based learning for college students" />
 </Helmet>
@@ -56,13 +56,13 @@ function Project() {
         <p className="text-lg text-gray-700 leading-relaxed tracking-wide space-y-4 animate__animated animate__fadeIn animate__delay-2s mt-6">
           Are you a client looking to build custom software solutions for your
           business or a college student working on a project for your academic
-          requirements? Look no further! We at ArrayLogic Academy specialize in
+          requirements? Look no further! We at DIGITALORBIT SOLUTIONS LLP specialize in
           transforming ideas into powerful digital solutions. Whether you need a
           scalable business application, an innovative web solution, or a
           cutting-edge mobile app, we’re here to help.
           <br />
           <br />
-          At ArrayLogic Academy, we understand that different projects require
+          At DIGITALORBIT SOLUTIONS LLP, we understand that different projects require
           different technologies. Whether you’re a business client seeking the
           most efficient solution for your company or a college student working
           on your next great project, we have the expertise in all programming
@@ -89,7 +89,7 @@ function Project() {
         <p className="text-2xl font-bold text-green-400 mt-6">For Clients:</p>
         <p>
           In today’s fast-paced world, having the right software can make all the
-          difference. At ArrayLogic Softwares, we understand the unique needs of
+          difference. At DIGITALORBIT SOLUTIONS LLP, we understand the unique needs of
           businesses, and we offer end-to-end development services tailored to
           your goals. From requirement gathering to deployment and support, we
           ensure that your project is built to meet your business objectives and

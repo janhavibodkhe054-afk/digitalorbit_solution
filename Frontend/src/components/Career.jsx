@@ -163,19 +163,19 @@ const Career = () => {
   return (
     <>
           <Helmet>
-        <title>Careers at ArrayLogic Academy | Join Our Team</title>
+        <title>Careers at DIGITALORBIT SOLUTIONS LLP | Join Our Team</title>
         <meta
           name="description"
-          content="Explore exciting career opportunities at ArrayLogic Academy. Join our team and contribute to delivering industry-leading IT training programs in Pune. Apply now!"
+          content="Explore exciting career opportunities at DIGITALORBIT SOLUTIONS LLP. Join our team and contribute to delivering industry-leading IT training programs in Pune. Apply now!"
         />
         <meta
           name="keywords"
-          content="careers at ArrayLogic Academy, job openings Pune, IT training institute careers, career opportunities in Pune, teaching jobs Pune, IT instructor positions, ArrayLogic job vacancies, internship opportunities Pune, tech jobs Pune"
+          content="careers at DIGITALORBIT SOLUTIONS LLP, job openings Pune, IT training institute careers, career opportunities in Pune, teaching jobs Pune, IT instructor positions, ArrayLogic job vacancies, internship opportunities Pune, tech jobs Pune"
         />
-        <meta property="og:title" content="Careers at ArrayLogic Academy | Join Our Team" />
+        <meta property="og:title" content="Careers at DIGITALORBIT SOLUTIONS LLP | Join Our Team" />
         <meta
           property="og:description"
-          content="ArrayLogic Academy is hiring! Explore career opportunities in IT training, administration, and tech support. Be a part of Pune's leading IT training institute."
+          content="DIGITALORBIT SOLUTIONS LLP is hiring! Explore career opportunities in IT training, administration, and tech support. Be a part of Pune's leading IT training institute."
         />
         <meta property="og:image" content="https://www.arraylogicacademy.in/assets/career-og-image.jpg" />
         <meta property="og:url" content="https://www.arraylogicacademy.in/career" />
@@ -183,7 +183,7 @@ const Career = () => {
         <meta name="twitter:title" content="Careers at ArrayLogic Academy | Join Our Team" />
         <meta
           name="twitter:description"
-          content="Looking for a career in IT training? Join ArrayLogic Academy in Pune. We offer opportunities for IT trainers, support staff, and more. Apply now!"
+          content="Looking for a career in IT training? Join DIGITALORBIT SOLUTIONS LLP in Pune. We offer opportunities for IT trainers, support staff, and more. Apply now!"
         />
         <meta name="twitter:image" content="https://www.arraylogicacademy.in/assets/career-twitter-image.jpg" />
         <meta name="author" content="ArrayLogic Academy" />
@@ -199,7 +199,7 @@ const Career = () => {
             Explore Top Job Opportunities with Leading Tech Companies
           </h1>
           <h1 className="text-lg text-black mb-12 text-left">
-            At <b className="text-orange-600">ArrayLogic Academy</b>, we are committed to empowering individuals to
+            At <b className="text-orange-600">DIGITALORBIT SOLUTIONS </b>, we are committed to empowering individuals to
             grow both professionally and personally. As a dynamic organization,
             we continuously evolve to provide the best training and development
             programs. In addition to equipping our students with top-tier
@@ -220,7 +220,7 @@ const Career = () => {
             can access the latest job openings and career pages from renowned
             companies, giving you the chance to land your dream role. Start
             exploring today and take the next big step in your career journey
-            with ArrayLogic Academy!
+            with DIGITALORBIT SOLUTIONS!
           </h1>
           <h1 className="mb-10 text-4xl">
           Ready to Land Your Dream Job? Explore Job Opportunities and Build a Standout Resume! –{" "}

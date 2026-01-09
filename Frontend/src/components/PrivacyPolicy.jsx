@@ -6,7 +6,7 @@ import React from "react";
 function PrivacyPolicy() {
   return (
     <><Helmet>
-    <title>Privacy Policy | ArrayLogic Academy - IT Training Institute in Pune</title>
+    <title>Privacy Policy | DIGITALORBIT SOLUTIONS LLP - IT Training Institute in Pune</title>
     <meta name="description" content="Read the privacy policy of ArrayLogic Academy, an IT training institute in Pune. Learn how we collect, use, and protect your personal data while you access our website and services, including courses, internships, and career development programs." />
     <meta name="keywords" content="Privacy Policy, ArrayLogic Academy, IT training privacy policy, personal data protection, website privacy, user data protection, data collection practices, privacy policy for IT training institute, privacy policy Pune, user information security, student data privacy, online training data protection, data usage, personal information security" />
   </Helmet>

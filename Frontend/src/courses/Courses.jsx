@@ -11,10 +11,10 @@ function Courses() {
     <>
       {/* SEO */}
       <Helmet>
-        <title>Explore IT Courses | ArrayLogic Academy | Learn & Build Your Career</title>
+        <title>Explore IT Courses | DIGITALORBIT SOLUTIONS LLP | Learn & Build Your Career</title>
         <meta
           name="description"
-          content="Join ArrayLogic Academy to master IT skills with courses in Java Full Stack, MERN, MEAN, Python, Data Science, AI, Cloud Computing, AWS, Machine Learning, and more. Build a tech-savvy career today!"
+          content="Join DIGITALORBIT SOLUTIONS LLP to master IT skills with courses in Java Full Stack, MERN, MEAN, Python, Data Science, AI, Cloud Computing, AWS, Machine Learning, and more. Build a tech-savvy career today!"
         />
         <meta
           name="keywords"
@@ -22,11 +22,11 @@ function Courses() {
         />
         <meta
           property="og:title"
-          content="Explore IT Courses | ArrayLogic Academy | Learn & Build Your Career"
+          content="Explore IT Courses | DIGITALORBIT SOLUTIONS LLP | Learn & Build Your Career"
         />
         <meta
           property="og:description"
-          content="ArrayLogic Academy offers industry-relevant IT courses including Java, MERN, Python, Data Science, AI, and Cloud Computing. Enroll now and shape your career in technology."
+          content="DIGITALORBIT SOLUTIONS LLP offers industry-relevant IT courses including Java, MERN, Python, Data Science, AI, and Cloud Computing. Enroll now and shape your career in technology."
         />
         <meta property="og:url" content="https://www.arraylogicacademy.in/courses" />
         <meta
@@ -36,11 +36,11 @@ function Courses() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Explore IT Courses | ArrayLogic Academy | Learn & Build Your Career"
+          content="Explore IT Courses |DIGITALORBIT SOLUTIONS LLP | Learn & Build Your Career"
         />
         <meta
           name="twitter:description"
-          content="Find top IT courses at ArrayLogic Academy in Pune, offering Java Full Stack, Python, MERN, MEAN, Data Science, AI, Machine Learning, Cloud Computing, and more."
+          content="Find top IT courses at DIGITALORBIT SOLUTIONS LLP in Pune, offering Java Full Stack, Python, MERN, MEAN, Data Science, AI, Machine Learning, Cloud Computing, and more."
         />
         <meta
           name="twitter:image"

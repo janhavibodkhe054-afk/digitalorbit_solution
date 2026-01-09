@@ -72,16 +72,16 @@ const Course = () => {
     <>
       <Helmet>
         <title>
-          IT Courses | ArrayLogic Academy - Premier IT Training Institute in
+          IT Courses | DIGITALORBIT SOLUTIONS LLP - Premier IT Training Institute in
           Pune
         </title>
         <meta
           name="description"
-          content="ArrayLogic Academy offers a diverse range of industry-relevant IT courses in Pune. Learn Java Full Stack, MERN Stack, MEAN Stack, Python Full Stack, Data Science, Cloud Computing, Machine Learning, Artificial Intelligence, and more from experienced instructors to enhance your career in technology. Our training programs are designed to give you hands-on experience and skills that employers demand."
+          content="DIGITALORBIT SOLUTIONS LLP offers a diverse range of industry-relevant IT courses in Pune. Learn Java Full Stack, MERN Stack, MEAN Stack, Python Full Stack, Data Science, Cloud Computing, Machine Learning, Artificial Intelligence, and more from experienced instructors to enhance your career in technology. Our training programs are designed to give you hands-on experience and skills that employers demand."
         />
         <meta
           name="keywords"
-          content="IT courses in Pune, ArrayLogic Academy Pune, Java Full Stack training, MERN Stack courses, MEAN Stack training, Python Full Stack courses, Data Science courses, Machine Learning courses, AI training, Cloud Computing classes, software development courses, technology career training, professional IT certification, coding bootcamp Pune, best IT institute Pune, job-ready IT courses, career-oriented IT training"
+          content="IT courses in Pune, DIGITALORBIT SOLUTIONS LLP Pune, Java Full Stack training, MERN Stack courses, MEAN Stack training, Python Full Stack courses, Data Science courses, Machine Learning courses, AI training, Cloud Computing classes, software development courses, technology career training, professional IT certification, coding bootcamp Pune, best IT institute Pune, job-ready IT courses, career-oriented IT training"
         />
       </Helmet>
 
@@ -120,7 +120,7 @@ const Course = () => {
 
   {/* Motivational CTA Line */}
   <p className="text-gray-800 text-lg md:text-xl font-semibold mb-6">
-    Launch your career with <span className="text-orange-500">DIGITALORBIT SOLUTIONS LLP</span>'s job-ready software courses!
+    Launch your career with <span className="text-orange-500">DIGITALORBIT SOLUTIONS</span>'s job-ready software courses!
   </p>
 
   {/* Back Button */}

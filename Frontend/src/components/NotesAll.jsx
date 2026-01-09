@@ -8,7 +8,7 @@ function NotesAll() {
   return (
     <>
     <Helmet>
-  <title>Notes | ArrayLogic Academy - IT Learning Resources and Study Materials</title>
+  <title>Notes | DIGITALORBIT SOLUTIONS LLP - IT Learning Resources and Study Materials</title>
   <meta name="description" content="Access study notes, learning resources, and materials for various IT courses at ArrayLogic Academy in Pune. Our notes cover topics in Java Full Stack, MERN Stack, Python, Data Science, Machine Learning, and more to help you excel in your IT career and exams." />
   <meta name="keywords" content="IT notes Pune, study materials ArrayLogic Academy, Java Full Stack notes, MERN Stack notes, Python notes, Data Science study resources, Machine Learning notes, AI learning materials, IT learning resources, coding notes Pune, exam preparation notes, software development study materials, career development notes, IT certification notes" />
 </Helmet>

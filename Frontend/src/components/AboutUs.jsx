@@ -4,11 +4,11 @@ import React from "react";
 
 /* NEW UNIQUE PROFESSIONAL IMAGES */
 const heroImage =
-  "https://images.pexels.com/photos/3184462/pexels-photo-3184462.jpeg"; // corporate team working
+  "/about1.jpeg"; // corporate team working
 const aboutImage1 =
-  "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg"; // IT classroom / training
+  "/about2.jpeg"; // IT classroom / training
 const aboutImage2 =
-  "https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg"; // office meeting / discussion
+  "/about3.jpeg"; // office meeting / discussion
 
 function AboutUs() {
   return (
