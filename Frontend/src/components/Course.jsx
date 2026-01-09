@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import Cards from "../components/Cards";
-import CourseImg from "../../public/CourseIMG.webp";
+;
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
@@ -86,7 +86,7 @@ const Course = () => {
       </Helmet>
 
       <div className="mt-14">
-        <img src={CourseImg} alt="Image Coomin Soon"></img>
+        <img src="/CourseIMG.webp" alt="Image Coomin Soon"></img>
       </div>
       <div className="max-w-screen-2xl container mx-auto md:px-18 px-3">
         {/* Header Section */}

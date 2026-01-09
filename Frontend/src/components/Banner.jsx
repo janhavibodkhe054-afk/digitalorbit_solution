@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const slides = [
   "/company6.jpeg",
@@ -8,7 +9,11 @@ const slides = [
 
 const Banner = () => {
   const [current, setCurrent] = useState(0);
+const navigate = useNavigate()
 
+  const handleChange=()=>{
+    navigate('/course')
+  }
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
@@ -59,11 +64,11 @@ const Banner = () => {
 
             {/* CTA */}
             <div className="mt-10 flex justify-center gap-6">
-              <a href="/course">
-                <button className="bg-[#0f1f3d] hover:bg-[#1a2a4f] text-white px-12 py-3 rounded-md font-semibold shadow-lg transition-all hover:-translate-y-0.5">
+               
+                <button onClick={()=>handleChange()} className="bg-[#0f1f3d] hover:bg-[#1a2a4f] text-white px-12 py-3 rounded-md font-semibold shadow-lg transition-all hover:-translate-y-0.5">
                   Explore Courses
                 </button>
-              </a>
+              
 
               <a href="/contact">
                 <button className="bg-white hover:text-[#0f1f3d]  px-12 py-3 rounded-md hover:bg-white hover:text-[#0f1f3d] transition-all hover:-translate-y-0.5 shadow-md">
