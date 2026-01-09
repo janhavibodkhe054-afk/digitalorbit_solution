@@ -15,44 +15,44 @@ const AboutHome = () => {
     if (!formRef.current) return;
 
     emailjs
-      .sendForm(
-        "service_5r25imp",
-        "template_kd8ybev",
-        formRef.current,
-        { publicKey: "jU-1FIjK-BxDlu-KT" }
-      )
+      .sendForm("service_5r25imp", "template_kd8ybev", formRef.current, {
+        publicKey: "jU-1FIjK-BxDlu-KT",
+      })
       .then(() => setShowForm(false))
       .catch(console.error);
   };
 
   return (
     <section className="max-w-screen-2xl mx-auto px-4 sm:px-8 md:px-16 pt-16">
-      
       {/* Heading */}
-      <h1 className="
+      <h1
+        className="
         text-center font-extrabold
         text-3xl sm:text-4xl md:text-5xl
         bg-blue-900
         text-transparent bg-clip-text
         mb-6
         drop-shadow-sm
-      ">
+      "
+      >
         DIGITALORBIT SOLUTIONS
       </h1>
 
       {/* Description */}
-      <p className="
+      <p
+        className="
         text-center text-sm sm:text-base md:text-lg
         text-gray-700
         max-w-4xl mx-auto
         leading-relaxed
         drop-shadow-sm
-      ">
+      "
+      >
         Empowering careers through technology and innovation. DIGITALORBIT
-        SOLUTIONS is a professional IT Training and Development Institute
-        based in Sonai, Ahmednagar. We deliver industry-oriented courses,
-        practical learning, and real-world projects to help students and
-        professionals succeed in today’s digital industry.
+        SOLUTIONS is a professional IT Training and Development Institute based
+        in Sonai, Ahmednagar. We deliver industry-oriented courses, practical
+        learning, and real-world projects to help students and professionals
+        succeed in today’s digital industry.
       </p>
 
       {/* CTA Buttons */}
@@ -90,16 +90,20 @@ const AboutHome = () => {
 
       {/* Modal */}
       {showForm && (
-        <div className="
+        <div
+          className="
           fixed inset-0 z-50 flex items-center justify-center
           bg-black/60 backdrop-blur-sm px-4 animate-fadeIn
-        ">
-          <div className="
+        "
+        >
+          <div
+            className="
             bg-white/95 backdrop-blur-md w-full max-w-lg
             p-6 sm:p-8
             rounded-3xl shadow-2xl border border-white/20
             relative animate-slideUp
-          ">
+          "
+          >
             {/* Close Button */}
             <button
               onClick={toggleForm}
@@ -114,11 +118,13 @@ const AboutHome = () => {
             </button>
 
             {/* Modal Title */}
-            <h2 className="
+            <h2
+              className="
               text-2xl sm:text-3xl font-bold
               text-center text-blue-900
               mb-6 drop-shadow-sm
-            ">
+            "
+            >
               Get in Touch
             </h2>
 
@@ -146,7 +152,6 @@ const AboutHome = () => {
   hover:shadow-md
   text-white
 "
-
                   />
                 </div>
               ))}
@@ -162,12 +167,13 @@ const AboutHome = () => {
                   placeholder="Enter your message"
                   required
                   className="
-                    w-full px-4 py-3
-                    border border-gray-300 rounded-xl
-                    shadow-inner focus:ring-2 focus:ring-[#0f1f3d]
-                    outline-none transition-all duration-300
-                    hover:shadow-md
-                  "
+  w-full px-4 py-3
+  border border-gray-300 rounded-xl
+  shadow-inner focus:ring-2 focus:ring-[#0f1f3d]
+  outline-none transition-all duration-300
+  hover:shadow-md
+  text-white
+"
                 />
               </div>
 
