@@ -135,23 +135,23 @@ const Internships = () => {
                     type={field === "email" ? "email" : "text"}
                     name={field}
                     required
-                    className="w-full px-4 py-2 border rounded-md
-                               focus:ring-2 focus:ring-orange-500"
+                    className="w-full px-4 py-2 border rounded-md bg-white text-black
+             focus:ring-2 focus:ring-orange-500"
                   />
                 </div>
               ))}
 
               <div className="mb-4">
                 <label className="block text-sm font-medium mb-1">
-                  Resume Link
+                  Message
                 </label>
                 <input
                   type="url"
                   name="resume"
                   required
-                  placeholder="Google Drive / Dropbox link"
-                  className="w-full px-4 py-2 border rounded-md
-                             focus:ring-2 focus:ring-orange-500"
+                  placeholder="Message here..."
+                  className="w-full px-4 py-2 border rounded-md bg-white text-black
+             focus:ring-2 focus:ring-orange-500"
                 />
               </div>
 

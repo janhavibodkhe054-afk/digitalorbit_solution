@@ -139,12 +139,14 @@ const AboutHome = () => {
                     placeholder={`Enter your ${field.label}`}
                     required
                     className="
-                      w-full px-4 py-3
-                      border border-gray-300 rounded-xl
-                      shadow-inner focus:ring-2 focus:ring-[#0f1f3d]
-                      outline-none transition-all duration-300
-                      hover:shadow-md
-                    "
+  w-full px-4 py-3
+  border border-gray-300 rounded-xl
+  shadow-inner focus:ring-2 focus:ring-[#0f1f3d]
+  outline-none transition-all duration-300
+  hover:shadow-md
+  text-white
+"
+
                   />
                 </div>
               ))}
